@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {BrowserRouter,Route,Routes} from "react-router-dom"
+import Landing from "./LandingPage";
+import {FormPost} from "./formpost";
+import { ViewPost } from "./viewpost";
+export const App=()=>{
+    return (
+        <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Landing/>}/>
+            <Route path="/view" element={<ViewPost/>}/>
+            <Route path="/post" element={<FormPost/>}/>
+        </Routes>
+        </BrowserRouter>
+    )
 }
-
-export default App;

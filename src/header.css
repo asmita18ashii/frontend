@@ -1,0 +1,24 @@
+.header{
+width:50%;
+ display:flex;
+ align-items: center;
+ margin-top: 15px;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 5px;
+ border: 2px solid black;
+ border-radius: 5px;
+}
+.logo{
+ color:wheat;
+}
+.logo img{
+    width:150px;
+}
+.camera-icon{
+    align-items: center;
+    margin-left: auto;
+}
+.camera-icon img{
+    width:60px;
+}

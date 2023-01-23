@@ -1,0 +1,11 @@
+.container{
+    height: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+    justify-content: space-evenly;
+}
+.container input,textarea{
+    height: 10%;
+    border: 3px solid black;
+}
